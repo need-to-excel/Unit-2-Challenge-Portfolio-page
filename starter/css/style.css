@@ -7,6 +7,7 @@ body {
   padding: 0;
   /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
   line-height: 1.5;
+  background-color: lightgrey;
 }
 
 .header {
@@ -52,7 +53,51 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 #banner{
 background-color: rgba(255, 255, 255, 0.7)
+}
 
+#portfolio {
+margin: 10px 5%;
+  display: grid;
+  min-height: 800px;
+  height: 60vh;
+  grid-template-rows: 25%, 25%, 25%, 25%;
+  grid-template-columns: 25%, 25%, 25%, 25%;
+  grid-template-areas:
+  "webpages webpages"
+  "webpages webpages"
+  "Led puzzle"
+  "calculator run";
+}
+
+#webpages {
+  grid-area: webpages;
+  background-image: url(../images/02-portfolio-4.jpg);
+  margin: 20px;
+}
+
+#Led {
+grid-area: Led;
+background-image: url(../images/02-portfolio-1.jpg);
+margin: 20px;
+}
+#puzzle {
+grid-area: puzzle;
+background-image: url(../images/02-portfolio-2.jpg);
+margin: 20px;
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-3.jpg);
+  margin: 20px;
+}
+
+#run {
+  grid-area: run;
+  background-image: url(../images/02-run-buddy.jpg);
+  margin: 20px;
+  /*justify-content: space-around;
+  cursor: pointer;*/
 }
 
 h1,
@@ -66,4 +111,14 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.footerContact {
+padding:10px;
+margin: 10px;
+background-color: none;
+display: flex;
+justify-content: space-around;
+font-family: Arial, Helvetica, sans-serif;
+color: blue;
 }
