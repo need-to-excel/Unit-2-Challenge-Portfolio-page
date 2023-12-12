@@ -1,124 +1,125 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
-  line-height: 1.5;
-  background-color: lightgrey;
+background-color: lightgrey;
+text-rendering: optimizeSpeed;
+font-family: serif, sans-serif;
+line-height: 1.7;
+font-size: 13px;
 }
 
 .header {
-padding:10px;
-margin: 10px;
-background-color: blue;
 display: flex;
 justify-content: space-around;
-font-family: Arial, Helvetica, sans-serif;
+margin: 0px;
+padding: 0px;
+list-style: none;
+background-color: darkblue;
 color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
 }
 
-.surname, #navhyper {
-width: 50%;
-height: 50px;
-}
-
-.header .surname {
+.surname {
 color: bisque;
 }
 
 li {
-display: inline-block;
+display: inline;
 text-decoration: none;
-margin: 10px;
-}
+margin: 2px;
 
+}
 a {
 color: white;
 }
 
-.hero-banner {
-padding:10px;
-margin: 10px;
-width: 100%;
-height: 80px;
+section {
 display: flex;
-justify-content: right;
+}
+
+.section-heading {
+/*flex: 1;*/
+min-width: 300px;
+font-size: 20px;
+font-family: serif;
+color: rgb(18, 18, 139);
+border-right: 5px solid blue;
+}
+
+.section-body {
+flex: 1;
+font-size: 20px;
+font-family: serif;
+color: rgb(18, 18, 139);
+display: flex;
+justify-content: center;
 align-items: center;
-background-image: url(../images/02-hero-bg.jpg);
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#banner{
-background-color: rgba(255, 255, 255, 0.7)
+.about-me-title {
+min-height: 200px;
 }
 
-#portfolio {
-margin: 10px 5%;
-  display: grid;
-  min-height: 800px;
-  height: 60vh;
-  grid-template-rows: 25%, 25%, 25%, 25%;
-  grid-template-columns: 25%, 25%, 25%, 25%;
-  grid-template-areas:
-  "webpages webpages"
-  "webpages webpages"
-  "Led puzzle"
-  "calculator run";
-}
-
-#webpages {
-  grid-area: webpages;
-  background-image: url(../images/02-portfolio-4.jpg);
-  margin: 20px;
-}
-
-#Led {
-grid-area: Led;
-background-image: url(../images/02-portfolio-1.jpg);
-margin: 20px;
-}
-#puzzle {
-grid-area: puzzle;
-background-image: url(../images/02-portfolio-2.jpg);
-margin: 20px;
-}
-
-#calculator {
-  grid-area: calculator;
-  background-image: url(../images/02-portfolio-3.jpg);
-  margin: 20px;
-}
-
-#run {
-  grid-area: run;
-  background-image: url(../images/02-run-buddy.jpg);
-  margin: 20px;
-  /*justify-content: space-around;
-  cursor: pointer;*/
-}
-
-h1,
+body,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 p {
-  margin: 0;
+margin: 0;
 }
 
-.footerContact {
-padding:10px;
-margin: 10px;
-background-color: none;
+#banner {
+font-size: 20px;
+color: white;
 display: flex;
-justify-content: space-around;
-font-family: Arial, Helvetica, sans-serif;
-color: blue;
+justify-content: end;
+align-self: center;
+}
+
+.hero-banner {
+background-image: url(../challenges/Unit-2-Challenge-Portfolio-page/starter/images/02-hero-bg.jpg);
+width: 100%;
+height: 100%;
+display: flex;
+padding: 30px;
+object-fit: cover;
+}
+
+article {
+position: relative;
+}
+
+.tiles {
+background: lightcyan;
+/* align-self: flex-end; */
+margin: 1rem, 1rem, .4rem; 
+padding: 1rem;
+/* box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1); */
+position: absolute;
+bottom: 50px;
+border: 2px solid lightgreen;
+border-radius: 30%;
+}
+
+article img {
+width: 100%;
+height: 100%;
+display: flex;
+object-fit: cover; 
+}
+
+.section-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-inline: auto;
+gap: 20px;
+margin-right: 80px;
+margin-left: 80px;
+}
+
+article:nth-child(1) {
+grid-column: 1 / 3;
+}
+
+.contact-me {
+color: rgb(18, 18, 139);
+font-family: serif;
+font-size: 18px;
 }
