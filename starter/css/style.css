@@ -74,7 +74,7 @@ align-self: center;
 }
 
 .hero-banner {
-background-image: url(../challenges/Unit-2-Challenge-Portfolio-page/starter/images/02-hero-bg.jpg);
+background-image: url(/Unit-2-Challenge-Portfolio-page/starter/images/02-hero-bg.png);
 width: 100%;
 height: 100%;
 display: flex;
